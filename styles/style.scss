@@ -1,0 +1,36 @@
+@import './variables';
+@import './functions';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $poppins;
+    color: $dark-grey;
+}
+
+body{
+    padding: 0px 9%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-top:48px;
+    .items{
+        display: flex;
+        &__logo{
+            height: 32px;
+            width: 120px;
+            margin-right: 45px;
+        }
+        &__list{
+            display: flex;
+            align-items: center;
+            list-style:none;
+            .item{
+                margin-right: 29px;
+            }
+        }
+    }
+}
